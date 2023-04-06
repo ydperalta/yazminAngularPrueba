@@ -1,0 +1,8 @@
+<h1>Detalle id Reto {{idReto}}</h1>
+<h3>{{detalle.reto || ''}}</h3>
+<h3>{{detalle.escuela}}</h3>
+<ul class="list-group" *ngFor="let periodo of detalle.periodosSemanales">
+    <li class="list-group-item">New <span class="badge">{{periodo.periodoSemanal}}</span></li>
+</ul>
+
+<button color="primary" (click)="regresar()">Regresar</button>

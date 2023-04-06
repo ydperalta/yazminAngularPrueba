@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Accion</th>
+            <th scope="col">idReto</th>
+            <th scope="col">Reto</th>
+            <th scope="col">UnidadFormativa</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let reto of listaReto">
+            <th scope="row"><button color="primary" (click)="irDetalle(reto.idReto)">Ver Detalle</button></th>
+            <!--botton-->
+            <td>{{reto.idReto}}</td>
+            <td>{{reto.reto}}</td>
+            <td>{{reto.unidadFormativa}}</td>
+
+        </tr>
+
+    </tbody>
+</table>
